@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}
+  Invite a friend
+{% end %}
+{% block main%}
+  <div class="content">
+    <div style="background: #FF0097; border-radius: 10px; text-align:center;">
+        <img style="position: relative; top: -40px" src="{{ static_url("images/mltshp-invite-userformpage-header.png") }}" alt="Invite a friend to join mltshp.">
+    </div>
+    <div style="text-align: center; padding:  16px">
+        <h2>Invite your friend today! They'll get a free month o' mltshp ending with the opportunity to join and support mltshp just like you do!</h2>
+        <p style="font-size:1.5em"><em>So send them an invite already!</em> We'd love to meet your favorite person!</p>
+        <div class="fun-form" style="width: 250px; display: inline-block">
+            <form>
+                <div class="field" style="width: 300px">
+                    <div class="field-input">
+                        <input class="input-text" name="full_name" type="text" placeholder="your full name"></input>
+                    </div>
+                </div>
+                <div class="field" style="width: 300px">
+                    <div class="field-input" >
+                        <input class="input-text" name="username" type="text" placeholder="your username"></input>
+                    </div>
+                </div>
+                <div class="field" style="width: 300px">
+                    <div class="field-input">
+                        <input class="input-text" name="friend_name" type="text" placeholder="your friend's first name"></input>
+                    </div>
+                </div>
+                <div class="field" style="width: 300px">
+                    <div class="field-input">
+                        <input class="input-text" name="friend_email" type="text" placeholder="your friend's email"></input>
+                    </div>
+                </div>
+                <div class="field" style="width: 300px">
+                    <button class="btn btn-primary btn-large btn-shadow" style="width: 100%">Send Invite</button>
+                </div>
+            </form>
+        </div>
+        <p style="font-size:1.5em">Your friend will just be contacted this one time and not be added to a mailing list. <br>We all can't wait to meet your buddy!</p>
+    </div>
+
+  </div>
+{% end %}

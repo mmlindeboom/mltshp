@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}
+  You did it!
+{% end %}
+{% block main%}
+  <div class="content">
+    <div style="background: #FF0097; border-radius: 10px; text-align:center;">
+        <img src="{{ static_url("images/mltshp-invite-userformpage-completion-header.png") }}" alt="You did it!">
+    </div>
+    <div style="text-align: center; padding:  16px">
+        <p style="font-size: 2em"><strong>YAY! DONE!</strong><br>This is gonna be sweet!!</p>
+        <p> <a href="/" class="btn btn-primary btn-large btn-shadow">go play @ mltshp</a></p>
+    </div>
+
+  </div>
+{% end %}

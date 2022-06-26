@@ -206,6 +206,10 @@ routes = [
     (r"/code-of-conduct", handlers.misc.CodeOfConductHandler),
     (r"/healthy/is_healthy.php", handlers.misc.HAProxyHandler),
 
+    (r"/invite-friend/?", handlers.invite.IndexHandler),
+    (r"/invite-friend/completion", handlers.invite.CompletionHandler),
+    (r"/invite-friend/welcome", handlers.invite.WelcomeHandler),
+
     (r"/popular", handlers.popular.IndexHandler),
     (r"/popular/([\d]+)", handlers.popular.IndexHandler),
 

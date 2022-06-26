@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}
+  Welcome to MLTSHP
+{% end %}
+{% block main%}
+  <div class="content">
+    <div style="background: #FF0097; border-radius: 10px;">
+        <img src="{{ static_url("images/mltshp-aboutANDsignup-header.png") }}" alt="Welcome to MLTSHP!">
+    </div>
+    <div style="padding: 32px">
+        <h2>Hey there, {name}</h2>
+        <h3 style="color: #ff0080;">{Inviter} wants you to have a free month o' mltshp</h3>
+        <p>Lorem ipsum</p>
+
+        <h2>What is mltshp?</h2>
+        <h3 style="color: #ff0080;">Well it's a thing that you post things on. Here's a <a href="/popular" target="_blank">pop-up link to todays favorite things</a> posted.</h3>
+        <p>Lorem ipsum</p>
+
+        <h2>Sign-up quick!</h2>
+        <h3 style="color: #ff0080;">...I mean, why not? It's free!</h3>
+        <p>You're really going to love this shit! Can't wait to meet you!</p>
+        <div class="fun-form" style="display: flex; justify-content: center;">
+            <form >
+                <div class="field" style="width: 300px">
+                    <div class="field-input">
+                        <input class="input-text" name="username" type="text" placeholder="username?"></input>
+                    </div>
+                </div>
+                <div class="field" style="width: 300px">
+                    <div class="field-input">
+                        <input class="input-text" name="password" type="password" placeholder="password?"></input>
+                    </div>
+                </div>
+                <div class="field" style="width: 300px">
+                    <div class="field-input">
+                        <input class="input-text" name="password-confirm" type="password" placeholder="password again"></input>
+                    </div>
+                </div>
+
+                <div class="field" style="width: 300px">
+                    <div class="field-input" >
+                        <input class="input-text" name="email" type="text" placeholder="your email?"></input>
+                    </div>
+
+                </div>
+
+                <div class="field" style="width: 300px">
+                 <p style="text-align: center">By creating an account you agree to <a href="/terms-of-use" target="_blank">MLTSHP's terms of use.</a></p>
+                    <button class="btn btn-primary btn-large btn-shadow" style="width: 100%">go play on mltshp</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  </div>
+{% end %}
